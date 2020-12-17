@@ -4,22 +4,22 @@
 using namespace std;
 int main()
 {
-	cout << "Welcome to the Restaurant Tax and Tip Calculator. " << endl;
-	cout << "We take your subtotal and add tax and tip to calculate the total money you will pay. " << endl;
-	cout << "You will enter your subtotal and the percentage that you would like to tip below. Please enter them as prompted. " << endl;
+	cout << "Welcome to the Restaurant Tax and Tip Calculator." << endl;
+	cout << "We take your subtotal and add tax and tip to calculate the total money you will pay." << endl;
+	cout << "You will enter your subtotal and the percentage that you would like to tip below. Please enter them as prompted." << endl;
 	string name; 
 	cout <<"Please enter your name." << endl;
 	getline (cin, name);
 	double subtotal;
-	cout <<"Please enter your subtotal of everything you ordered now. " << endl;
+	cout <<"Please enter your subtotal of everything you ordered now." << endl;
 	cin >> subtotal;
 	double  tippercentage;
-	cout <<"Please enter the percentage you would like to tip. " << endl;
+	cout <<"Please enter the percentage you would like to tip." << endl;
 	cin >> tippercentage;
 	double taxpercentage; 
-	cout <<"Please enter the percentage that you are getting taxed. " << endl; 
+	cout <<"Please enter the percentage that you are getting taxed." << endl; 
 	cin >> taxpercentage;
-	cout <<"--- " << endl;
+	cout <<"---" << endl;
 	double tax;
 	double tip;
 	double total;
@@ -28,22 +28,20 @@ int main()
 	total = subtotal + tax + tip; 
 
 	
-	cout <<"Calculating your total... " << endl;
+	cout <<"Calculating your total..." << endl;
 	cout << endl;
 
 
 	cout << "Here is the bill for "  << name <<  "." << endl;
 
-	cout <<"--- " << endl;
+	cout <<"---" << endl;
 	
 	cout<<"Subtotal:		 " << subtotal << endl;
 
 	cout<<"Tax:			" << tax << endl;
 
 	cout<<"Tip:			" << tip << endl;
+
 	cout<<"Total:	 		" << total << endl;
-
-	
-
 
 }
