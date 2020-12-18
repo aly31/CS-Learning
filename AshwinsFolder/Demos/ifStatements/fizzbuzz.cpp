@@ -16,10 +16,13 @@ int main()
 	// If the number is a multiple of 3, we print out "fizz"
 	// If the number is a multiple of 5, we print out "buzz"
 	// If the number is a multiple of 15, we print out "fizzbuzz"
+	// Otherwise, print out "N/A"
 
+	cout << "enter a positive integer" << endl;
+	int x;
+	cin >> x;
 
 	
-
 
 
 }
