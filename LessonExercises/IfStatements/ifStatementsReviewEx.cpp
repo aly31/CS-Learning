@@ -37,6 +37,13 @@ void exercise2()
 	// 93
 	// 94
 	// Your average for the class is 94
+
+	// Hint: how to remove a number from an average of a set of numbers 
+	// Given a set of n numbers x_1, x_2, ... , x_n
+	// The average of these numbers is sum(x_1, x_2, ... , x_n) / n
+	// To remove 1 value (some x_i) from the set and calculate the new average, 
+	// newAverage = (sum(x_1, x_2, ... , x_n) - x_i) / (n-1)
+
 	
 	// TODO: your code below
 
