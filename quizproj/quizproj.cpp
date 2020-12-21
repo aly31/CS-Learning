@@ -12,64 +12,78 @@ int main()
 	cout<<"1. What is 2 + 2?"<<endl;
 	int x;
 	cin >> x;
+	double sub;
+	
 
 	if (x != 4)
 	{
 		cout<<"That is incorrect!"<<endl;
+		sub = 0;
+		
 	}
 	else
 	{
 		if (x == 4)
 		{
 			cout<<"That is correct!"<<endl;
+			sub = 1;
 		}	
 	}	
 
 	cout<<"2. What is 2 - 2?"<<endl;
 	int a;
 	cin >> a;
+	double yes;
 
 	if (a != 0)
 	{
 		cout<<"That is incorrect!"<<endl;
+		yes = 0;
 	}
 	else
 	{
 		if (a == 0)
 		{
 			cout<<"That is correct!"<<endl;
+			yes = 1;
 		}
 	}
 	
 	cout<<"3. What is 3 + 4?"<<endl;
 	int b;
 	cin >> b;
+	double no;
 
 	if (b != 7)
 	{
 		cout<<"That is incorrect!"<<endl;
+		no = 0;
 	}	
 	else
 	{
 		if (b == 7)
 		{
 			cout<<"That is correct!"<<endl;
+			no = 1;
 		}		
 	}
 
 	cout<<"4. What is 9 - 5?"<<endl;
 	int c;
 	cin >> c;
+	double amount;
 
 	if (c != 4)
 	{
 		cout<<"That is incorrect!"<<endl;
+		amount = 0;
 	}
 	else
 	{
 		if (c == 4)
 		{
 			cout<<"That is correct!"<<endl;
+			amount = 1;
 		}	
 	}	
 	
@@ -166,8 +180,14 @@ int main()
 		if (i == 0)
 		{
 			cout<<"That is correct!"<<endl;
-		}	
+		}
+		
 	}
+	double total; 
+	total = sub + yes + no + amount;
+
+	cout<<"You got " << total << " out of 10 questions correct" << "." <<endl;
+
 
 }
 
