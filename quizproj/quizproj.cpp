@@ -4,15 +4,16 @@
 
 using namespace std;
 
+
 int main()
 {
 
 
 	cout<<"This is a math quiz. It consists of ten questions."<<endl;
 	cout<<"1. What is 2 + 2?"<<endl;
-	int x;
+	int x; //TODO: ONLY USE ONE VARIABLE: X
 	cin >> x;
-	double sub;
+	double sub; //TODO: ONLY USE ONE PHRASE WITH DOUBLE: SUB OR TOTAL
 	
 
 	if (x != 4)
@@ -23,17 +24,14 @@ int main()
 	}
 	else
 	{
-		if (x == 4)
-		{
-			cout<<"That is correct!"<<endl;
-			sub = 1;
-		}	
+		cout<<"That is correct!"<<endl;
+		sub = 1;		
 	}	
 
 	cout<<"2. What is 2 - 2?"<<endl;
-	int a;
+	int a; //TODO: REMOVE
 	cin >> a;
-	double yes;
+	double yes; //TODO: REMOVE
 
 	if (a != 0)
 	{
@@ -42,7 +40,7 @@ int main()
 	}
 	else
 	{
-		if (a == 0)
+		if (a == 0) //TODO: REMOVE
 		{
 			cout<<"That is correct!"<<endl;
 			yes = 1;
@@ -187,7 +185,6 @@ int main()
 	total = sub + yes + no + amount;
 
 	cout<<"You got " << total << " out of 10 questions correct" << "." <<endl;
-
 
 }
 
