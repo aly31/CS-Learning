@@ -7,14 +7,12 @@ using namespace std;
 
 int main()
 {
+	int x;
+	double total;
 	cout<<"This is a math quiz. It consists of ten questions."<<endl;
+	
 	cout<<"1. What is 2 + 2?"<<endl;
-	int x; 
 	cin >> x;
-	double total; 
-
-	
-	
 	if (x != 4)
 	{
 		cout<<"That is incorrect!"<<endl;
@@ -27,6 +25,7 @@ int main()
 	}	
 
 	cout<<"2. What is 2 - 2?"<<endl;
+	cin >> x;
 	if (x != 0)
 	{
 		cout<<"That is incorrect!"<<endl;
