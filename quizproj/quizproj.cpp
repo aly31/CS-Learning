@@ -7,46 +7,37 @@ using namespace std;
 
 int main()
 {
-
-
 	cout<<"This is a math quiz. It consists of ten questions."<<endl;
 	cout<<"1. What is 2 + 2?"<<endl;
-	int x; //TODO: ONLY USE ONE VARIABLE: X
+	int x; 
 	cin >> x;
-	double sub; //TODO: ONLY USE ONE PHRASE WITH DOUBLE: SUB OR TOTAL
-	
+	double total; 
 
+	
+	
 	if (x != 4)
 	{
 		cout<<"That is incorrect!"<<endl;
-		sub = 0;
-		
+		total = 0;	
 	}
 	else
 	{
 		cout<<"That is correct!"<<endl;
-		sub = 1;		
+		total = 1;		
 	}	
 
 	cout<<"2. What is 2 - 2?"<<endl;
-	int a; //TODO: REMOVE
-	cin >> a;
-	double yes; //TODO: REMOVE
-
-	if (a != 0)
+	if (x != 0)
 	{
 		cout<<"That is incorrect!"<<endl;
-		yes = 0;
+		total = 0;
 	}
 	else
 	{
-		if (a == 0) //TODO: REMOVE
-		{
-			cout<<"That is correct!"<<endl;
-			yes = 1;
-		}
+		cout<<"That is correct!"<<endl;
+		total = total + 1;	
 	}
-	
+
 	cout<<"3. What is 3 + 4?"<<endl;
 	int b;
 	cin >> b;
@@ -181,8 +172,7 @@ int main()
 		}
 		
 	}
-	double total; 
-	total = sub + yes + no + amount;
+	
 
 	cout<<"You got " << total << " out of 10 questions correct" << "." <<endl;
 
