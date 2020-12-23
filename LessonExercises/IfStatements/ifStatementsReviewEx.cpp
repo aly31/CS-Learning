@@ -18,9 +18,44 @@ void exercise1()
 	// The smallest number is 43.
 
 	// TODO: Add your code below
-	
+	cout << "Please enter 3 numbers" << "." << endl;
+	int x;
+	cin >> x;
+	int y;
+	cin >> y;
+	int z;
+	cin >> z;
 
-}
+
+	if (x < y && x < z)
+	{
+		cout <<"The smallest number is " << x << "." << endl;	
+	}	
+	if (y < x && y < z)
+	{
+		cout <<"The smallest number is " << y << "." <<endl;	
+	}	
+	if ( z < x && z < y) 
+	{
+		cout <<"The smallest number is " << z << "." << endl;
+	}	
+	if (x == y && y == z)
+	{
+		cout <<"ERROR" << "!" << endl;
+	}
+	if ( x == y && x < z)
+	{
+		cout <<"The smallest number is " << x << "." << endl;
+	}
+	if ( x == z && x < y)
+	{
+		cout <<"The smallest number is " << z << "." << endl;
+	}
+	if ( y == z && y < x)
+	{
+		cout <<"The smallest number is " << y << "." << endl;
+	}		
+}		
 
 void exercise2()
 {
