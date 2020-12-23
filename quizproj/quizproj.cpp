@@ -51,38 +51,30 @@ int main()
 	}
 
 	cout<<"4. What is 9 - 5?"<<endl;
-	int c;
-	cin >> c;
-	double amount;
-
-	if (c != 4)
+	cin >> x;
+	if (x != 4)
 	{
 		cout<<"That is incorrect!"<<endl;
-		amount = 0;
+		total = 0;
 	}
 	else
 	{
-		if (c == 4)
-		{
-			cout<<"That is correct!"<<endl;
-			amount = 1;
-		}	
+		
+		cout<<"That is correct!"<<endl;
+		total = total + 1;		
 	}	
 	
 	cout<<"5. What is 5 * 9?"<<endl;
-	int d; 
-	cin >> d;
-
-	if (d !=45)
+	cin >> x;
+	if (x !=45)
 	{
 		cout<<"That is incorrect!"<<endl;
+		total = 0;
 	}
 	else
 	{
-		if (d == 45)
-		{
-			cout<<"That is correct!"<<endl;
-		}	
+		cout<<"That is correct!"<<endl;
+		total = total + 1;		
 	}
 	
 	cout<<"6. What is 4 * 7?"<<endl;	
