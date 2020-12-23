@@ -9,6 +9,7 @@ int main()
 {
 	int x;
 	double total;
+	double subtotal;
 	cout <<"This is a math quiz. It consists of ten questions." <<endl;
 	
 	cout <<"1. What is 2 + 2?" <<endl;
@@ -16,7 +17,7 @@ int main()
 	if (x != 4)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;	
+		subtotal = 0;	
 	}
 	else
 	{
@@ -29,7 +30,7 @@ int main()
 	if (x != 0)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -42,7 +43,7 @@ int main()
 	if (x != 7)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}	
 	else
 	{
@@ -55,7 +56,7 @@ int main()
 	if (x != 4)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -68,7 +69,7 @@ int main()
 	if (x !=45)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -81,7 +82,7 @@ int main()
 	if (x != 28)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -94,7 +95,7 @@ int main()
 	if(x != 0)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -107,7 +108,7 @@ int main()
 	if(x != 5)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -120,7 +121,7 @@ int main()
 	if (x != 42)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}
 	else
 	{
@@ -133,7 +134,7 @@ int main()
 	if(x != 0)
 	{
 		cout <<"That is incorrect!" <<endl;
-		total = 0;
+		subtotal = 0;
 	}	
 	else
 	{	
@@ -141,10 +142,18 @@ int main()
 		total = total + 1;
 	}
 	double percentage;
-	percentage = (total/10) * 100;
-
-
+	double totals;
+	totals = (total + subtotal);
+	percentage = (totals / 10) * 100;
+	
 	cout <<"You got " << total << " out of 10 questions correct" << "." << "That's a " << percentage << "%!" <<endl;
-
-}
+	if (percentage == 90 - 100)
+	{
+		cout <<"A " << percentage << "is an A" << "." << endl;
+	}
+	if (percentage == 80 - 89)
+	{
+		cout <<"A " << percentage << "is a B" << "." << endl;
+	}
+}	
 
