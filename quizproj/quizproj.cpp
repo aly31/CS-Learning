@@ -38,22 +38,16 @@ int main()
 	}
 
 	cout<<"3. What is 3 + 4?"<<endl;
-	int b;
-	cin >> b;
-	double no;
-
-	if (b != 7)
+	cin >> x;
+	if (x != 7)
 	{
 		cout<<"That is incorrect!"<<endl;
-		no = 0;
+		total = 0;
 	}	
 	else
 	{
-		if (b == 7)
-		{
-			cout<<"That is correct!"<<endl;
-			no = 1;
-		}		
+		cout<<"That is correct!"<<endl;
+		total = total + 1;
 	}
 
 	cout<<"4. What is 9 - 5?"<<endl;
