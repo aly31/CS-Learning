@@ -18,14 +18,43 @@ void exercise1()
 	// The smallest number is 43.
 
 	// TODO: Add your code below
-	//	cout << "Please enter 3 numbers" << "." << endl;
-	//	double x;
-	//	cin >> x;
-	//	double y;
-	//	cin >> y;
-	//	double z;
-	//	cin >> z;
+		cout << "Please enter 3 numbers" << "." << endl;
+		double x;
+		cin >> x;
+		double y;
+		cin >> y;
+		double z;
+		cin >> z;
 
+
+
+	// Heres a hint on how to do this with 4 if-else statements
+
+	bool condition1, condition2, condition3, condition4;
+
+	// Assign different conditions to the above
+
+	if (condition1) {
+		cout << "All numbers are equal" << endl;
+	}
+	else
+	{
+		if (condition2) {
+			cout << "The smallest number is " << x << endl;
+		}
+		else 
+		{
+			if (condition3) 
+			{
+				cout << "The smallest number is " << y << endl;
+			}
+			else 
+			{
+				cout << "The smallest number is " << z << endl;
+			}
+		}
+	}
+	
 
 	//	if (x < y && x < z)
 	//	{
