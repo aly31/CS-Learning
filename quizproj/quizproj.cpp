@@ -146,7 +146,7 @@ int main()
 	totals = (total + subtotal);
 	percentage = (totals / 10) * 100;
 	
-	cout <<"You got " << total << " out of 10 questions correct" << "." << "That's a " << percentage << "%!" <<endl;
+	cout <<"You got " << totals << " out of 10 questions correct" << "." << "That's a " << percentage << "%!" <<endl;
 	if (percentage == 90 - 100)
 	{
 		cout <<"A " << percentage << "is an A" << "." << endl;
