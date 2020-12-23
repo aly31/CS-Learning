@@ -104,52 +104,42 @@ int main()
 	}
 
 	cout<<"8. What is 10/2?"<<endl;
-	int g;
-	cin>> g;
-
-	if(g != 5)
+	cin>> x;
+	if(x != 5)
 	{
 		cout<<"That is incorrect!"<<endl;
+		total = 0;
 	}
 	else
 	{
-		if (g == 5)
-		{
-			cout<<"That is correct!"<<endl;
-		}	
+		cout<<"That is correct!"<<endl;
+		total = total + 1;	
 	}
 
 	cout<<"9. What is (9 + 5) * 3?"<<endl;
-	int h;
-	cin>> h;
-
-	if (h != 42)
+	cin>> x;
+	if (x != 42)
 	{
 		cout<<"That is incorrect!"<<endl;
+		total = 0;
 	}
 	else
 	{
-		if (h == 42)
-		{
-			cout<<"That is correct!"<<endl;
-		}	
+		cout<<"That is correct!"<<endl;
+		total = total + 1;
 	}
 
 	cout<<"10. What is answer from question 2 * answer  from question 9?"<<endl;
-	int i;
-	cin>> i;
-
-	if(i != 0)
+	cin>> x;
+	if(x != 0)
 	{
 		cout<<"That is incorrect!"<<endl;
+		total = 0;
 	}	
 	else
 	{	
-		if (i == 0)
-		{
-			cout<<"That is correct!"<<endl;
-		}
-		
+		cout<<"That is correct!"<<endl;
+		total = total + 1;
 	}
 	
 
