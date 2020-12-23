@@ -78,35 +78,29 @@ int main()
 	}
 	
 	cout<<"6. What is 4 * 7?"<<endl;	
-	int e;
-	cin >> e;
-
-	if (e != 28)
+	cin >> x;
+	if (x != 28)
 	{
 		cout<<"That is incorrect!"<<endl;
+		total = 0;
 	}
 	else
 	{
-		if (e == 28)
-		{
-			cout<<"That is correct!"<<endl;
-		}	
+		cout<<"That is correct!"<<endl;
+		total= total + 1;		
 	}	
 	
 	cout<<"7. What is the remainder of 9/3?"<<endl;
-	int f;
-	cin >> f;
-
-	if(f != 0)
+	cin >> x;
+	if(x != 0)
 	{
 		cout<<"That is incorrect!"<<endl;
+		total = 0;
 	}
 	else
 	{
-		if (f == 0)
-		{
-			cout<<"That is correct!"<<endl;
-		}	
+		cout<<"That is correct!"<<endl;
+		total = total + 1;
 	}
 
 	cout<<"8. What is 10/2?"<<endl;
