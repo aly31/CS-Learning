@@ -143,10 +143,10 @@ int main()
 	{
 		cout <<"A " << percentage << " is a B" << "." << endl;
 	}
-	// if (percentage >= 70 && percentage <= 79)
-	// {
-	// 	cout <<"A " << percentage << " is a C" << "." << endl;
-	// }
+	if (percentage >= 70 && percentage <= 79)
+	{
+		cout <<"A " << percentage << " is a C" << "." << endl;
+	}
 	
 
 
