@@ -18,72 +18,31 @@ void exercise1()
 	// The smallest number is 43.
 
 	// TODO: Add your code below
-		cout << "Please enter 3 numbers" << "." << endl;
-		double x;
-		cin >> x;
-		double y;
-		cin >> y;
-		double z;
-		cin >> z;
-
-
-
-	// Heres a hint on how to do this with 4 if-else statements
-
-	bool condition1, condition2, condition3, condition4;
-
-	// Assign different conditions to the above
-
-	if (condition1) {
-		cout << "All numbers are equal" << endl;
+	cout << "Please enter 3 numbers" << "." << endl;
+	double x;
+	cin >> x;		
+	double y;
+	cin >> y;
+	double z;
+	cin >> z;
+	double minimum; 
+	if (x < y)
+	{
+		minimum = x;
 	}
 	else
 	{
-		if (condition2) {
-			cout << "The smallest number is " << x << endl;
-		}
-		else 
-		{
-			if (condition3) 
-			{
-				cout << "The smallest number is " << y << endl;
-			}
-			else 
-			{
-				cout << "The smallest number is " << z << endl;
-			}
-		}
+		minimum = y;
 	}
-	
-
-	//	if (x < y && x < z)
-	//	{
-	//		cout <<"The smallest number is " << x << "." << endl;	
-	//	}	
-	//	if (y < x && y < z)
-	//	{
-	//		cout <<"The smallest number is " << y << "." <<endl;	
-	//	}	
-	//	if ( z < x && z < y) 
-	//	{
-	//		cout <<"The smallest number is " << z << "." << endl;
-	//	}	
-	//	if (x == y && y == z)
-	//	{
-	//		cout <<"ERROR" << "!" << endl;
-	//	}
-	//	if ( x == y && x < z)
-	//	{
-	//		cout <<"The smallest number is " << x << "." << endl;
-	//	}
-	//	if ( x == z && x < y)
-	//	{
-	//		cout <<"The smallest number is " << z << "." << endl;
-	//	}
-	//	if ( y == z && y < x)
-	//	{
-	//	cout <<"The smallest number is " << y << "." << endl;
-	//}		
+	if (minimum < z)
+	{
+		cout << "The smallest number is " << minimum << endl;
+	}	
+	else
+	{
+		cout <<  "The smallest nubmer is " << z << endl;
+	}
+		
 }		
 
 void exercise2()
@@ -110,18 +69,20 @@ void exercise2()
 
 	
 	// TODO: your code below
-	cout << "Please enter your scores from 4 exams" << "." << endl;
-	double a;
-	cin >> a; 
-	double b;
-	cin >> b; 
-	double c;
-	cin >> c;
-	double d;
-	cin >> d; 
-	double average;
-	average = (a + b + c + d) / 4;
-	cout << "The average of your exams is " << average << "." << endl;
+	// cout << "Please enter your scores from 4 exams" << "." << endl;
+	// double a;
+	// cin >> a; 
+	// double b;
+	// cin >> b; 
+	// double c;
+	// cin >> c;
+	// double d;
+	// cin >> d; 
+
+	// double average;
+	// average = (a + b + c + d) / 4;
+	// cout << "The average of your exams is " << average << "." << endl;
+
 
 
 }
