@@ -139,6 +139,14 @@ int main()
 	{
 		cout <<"A " << percentage << " is an A" << "." << endl;
 	}
+	if (percentage >= 80 && percentage <= 89)
+	{
+		cout <<"A " << percentage << " is a B" << "." << endl;
+	}
+	// if (percentage >= 70 && percentage <= 79)
+	// {
+	// 	cout <<"A " << percentage << " is a C" << "." << endl;
+	// }
 	
 
 
