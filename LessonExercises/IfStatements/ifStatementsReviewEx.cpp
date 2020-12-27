@@ -4,8 +4,8 @@
 
 using namespace std;
 
-void exercise1()
-{
+// void exercise1()
+
 	// This exercise will ask the user for 3 integers
 	// It will print the smallest of the number back
 
@@ -18,33 +18,32 @@ void exercise1()
 	// The smallest number is 43.
 
 	// TODO: Add your code below
-	cout << "Please enter 3 numbers" << "." << endl;
-	double x;
-	cin >> x;		
-	double y;
-	cin >> y;
-	double z;
-	cin >> z;
-	double minimum; 
-	if (x < y)
-	{
-		minimum = x;
-	}
-	else
-	{
-		minimum = y;
-	}
-	if (minimum < z)
-	{
-		cout << "The smallest number is " << minimum << endl;
-	}	
-	else
-	{
-		cout <<  "The smallest nubmer is " << z << endl;
-	}
-		
-}		
-
+// {	
+// 	cout << "Please enter 3 numbers" << "." << endl;
+// 	double x;
+// 	cin >> x;		
+// 	double y;
+// 	cin >> y;
+// 	double z;
+// 	cin >> z;
+// 	double minimum; 
+// 	if (x < y)
+// 	{
+// 		minimum = x;
+// 	}
+// 	else
+// 	{
+// 		minimum = y;
+// 	}
+// 	if (minimum < z)
+// 	{
+// 		cout << "The smallest number is " << minimum << endl;
+// 	}	
+// 	else
+// 	{
+// 		cout <<  "The smallest nubmer is " << z << "." << endl;
+// 	}
+// }	
 void exercise2()
 {
 	// This will be an extension of exercise 1
@@ -69,29 +68,55 @@ void exercise2()
 
 	
 	// TODO: your code below
-	// cout << "Please enter your scores from 4 exams" << "." << endl;
-	// double a;
-	// cin >> a; 
-	// double b;
-	// cin >> b; 
-	// double c;
-	// cin >> c;
-	// double d;
-	// cin >> d; 
-
-	// double average;
-	// average = (a + b + c + d) / 4;
-	// cout << "The average of your exams is " << average << "." << endl;
 
 
+	cout << "Please enter your scores from 4 exams" << "." << endl;
+	double a;
+	cin >> a; 
+	double b;
+	cin >> b; 
+	double c;
+	cin >> c;
+	double d;
+	cin >> d;
+	
+	double minimum;
+	double mini;
+	if (a < b)
+	{
+		minimum = a;
+	} 
+	else
+	{
+		minimum = b;
+	}
+	if (minimum < c)
+	{
+		minimum = a;
+	}
+	else 
+	{
+		minimum = c;
+	}
+	if ( minimum < d)
+	{
+		cout << "The smallest number is " << minimum << "." << endl;
+	}
+	else
+	{
+		cout << "The smallest number is " << d << "." << endl;
+	}
 
+	double average;
+	average = (a + b + c + d - minimum) / 3;
+	cout << "The average of your exams after the lowest dropped score is " << average << "." << endl;
 }
 
 int main()
 {
 	cout << "Exercise 1" << endl;
 	cout << "----------" << endl;
-	exercise1();
+	// exercise1();
 	cout << endl;
 	cout << "Exercise 2" << endl;
 	cout << "----------" << endl;
