@@ -62,7 +62,7 @@ int main()
 		total = total + 1;		
 	}	
 	
-	cout << "5. What is 5 * 9?" <<endl;
+	cout << questions + 4 << " What is 5 * 9?" <<endl;
 	cin >> x;
 	if (x !=45)
 	{
