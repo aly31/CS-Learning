@@ -74,7 +74,7 @@ int main()
 		total = total + 1;		
 	}
 	
-	cout << "6. What is 4 * 7?" <<endl;	
+	cout << questions + 5 << " What is 4 * 7?" <<endl;	
 	cin >> x;
 	if (x != 28)
 	{
