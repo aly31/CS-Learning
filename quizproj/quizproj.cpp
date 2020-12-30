@@ -11,10 +11,11 @@ int main()
 	double total;
 
 	int questions;
-	questions = 1;
+	
 	cout << "This is a math quiz. It consists of ten questions." <<endl;
 	
-	cout << questions << " What is 2 + 2?" <<endl;
+	cout << questions + 1 << " What is 2 + 2?" <<endl;
+	questions = 1;
 	cin >> x;
 	if (x != 4)
 	{
@@ -27,6 +28,7 @@ int main()
 	}	
 
 	cout << questions + 1 << " What is 2 - 2?" <<endl;
+	questions = questions + 1;
 	cin >> x;
 	if (x != 0)
 	{
@@ -38,7 +40,8 @@ int main()
 		total = total + 1;	
 	}
 
-	cout << questions + 2 << " What is 3 + 4?" <<endl;
+	cout << questions + 1 << " What is 3 + 4?" <<endl;
+	questions = questions + 1;
 	cin >> x;
 	if (x != 7)
 	{
@@ -50,7 +53,8 @@ int main()
 		total = total + 1;
 	}
 
-	cout << questions + 3 << " What is 9 - 5?" <<endl;
+	cout << questions + 1 << " What is 9 - 5?" <<endl;
+	questions = questions + 1;
 	cin >> x;
 	if (x != 4)
 	{
@@ -62,7 +66,8 @@ int main()
 		total = total + 1;		
 	}	
 	
-	cout << questions + 4 << " What is 5 * 9?" <<endl;
+	cout << questions + 1 << " What is 5 * 9?" <<endl;
+	questions = questions + 1;
 	cin >> x;
 	if (x !=45)
 	{
@@ -74,7 +79,8 @@ int main()
 		total = total + 1;		
 	}
 	
-	cout << questions + 5 << " What is 4 * 7?" <<endl;	
+	cout << questions + 1 << " What is 4 * 7?" <<endl;	
+	questions = questions + 1;
 	cin >> x;
 	if (x != 28)
 	{
@@ -86,7 +92,8 @@ int main()
 		total= total + 1;		
 	}	
 	
-	cout << "7. What is the remainder of 9/3?" <<endl;
+	cout << questions + 1 << " What is the remainder of 9/3?" <<endl;
+	questions = questions + 1;
 	cin >> x;
 	if(x != 0)
 	{
@@ -98,7 +105,8 @@ int main()
 		total = total + 1;
 	}
 
-	cout << "8. What is 10/2?" <<endl;
+	cout << questions + 1 << " What is 10/2?" <<endl;
+	questions = questions + 1;
 	cin>> x;
 	if(x != 5)
 	{
@@ -110,7 +118,8 @@ int main()
 		total = total + 1;	
 	}
 
-	cout << "9. What is (9 + 5) * 3?" <<endl;
+	cout << questions + 1 << " What is (9 + 5) * 3?" <<endl;
+	questions = questions + 1;
 	cin>> x;
 	if (x != 42)
 	{
@@ -122,7 +131,8 @@ int main()
 		total = total + 1;
 	}
 
-	cout << "10. What is answer from question 2 * answer  from question 9?" <<endl;
+	cout << questions + 1 << " What is answer from question 2 * answer  from question 9?" <<endl;
+	questions = questions + 1;
 	cin>> x;
 	if(x != 0)
 	{
@@ -135,7 +145,7 @@ int main()
 	}
 	
 	double percentage;
-	percentage = (total / questions) * 100;
+	percentage = (total / questions ) * 100;
 	
 	cout << "You got " << total << " out of 10 questions correct" << "." << "That's a " << percentage << "%!" <<endl;
 	if (percentage >= 90 && percentage <= 100)
