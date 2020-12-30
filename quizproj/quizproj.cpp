@@ -50,7 +50,7 @@ int main()
 		total = total + 1;
 	}
 
-	cout << "4. What is 9 - 5?" <<endl;
+	cout << questions + 3 << " What is 9 - 5?" <<endl;
 	cin >> x;
 	if (x != 4)
 	{
