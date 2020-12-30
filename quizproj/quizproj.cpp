@@ -38,7 +38,7 @@ int main()
 		total = total + 1;	
 	}
 
-	cout << "3. What is 3 + 4?" <<endl;
+	cout << questions + 2 << " What is 3 + 4?" <<endl;
 	cin >> x;
 	if (x != 7)
 	{
