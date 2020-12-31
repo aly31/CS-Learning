@@ -146,27 +146,38 @@ int main()
 	
 	double percentage;
 	percentage = (total / questions ) * 100;
+
+	char a; 
+	a = 'a';
+	char b;
+	b = 'b';
+	char c;
+	c = 'C';
+	char d;
+	d = 'D';
+	char f;
+	f = 'F';
 	
 	cout << "You got " << total << " out of 10 questions correct" << "." << "That's a " << percentage << "%!" <<endl;
 	if (percentage >= 90 && percentage <= 100)
 	{
-		cout << "A " << percentage << " is an A" << "." << endl;
+		cout << "A " << percentage << " is  an " << a << "." << endl;
 	}
 	if (percentage >= 80 && percentage <= 89)
 	{
-		cout << "A " << percentage << " is a B" << "." << endl;
+		cout << "A " << percentage << " is a " << b << "." << endl;
 	}
 	if (percentage >= 70 && percentage <= 79)
 	{
-		cout << "A " << percentage << " is a C" << "." << endl;
+		cout << "A " << percentage << " is a " << c << "." << endl;
 	}
 	if (percentage >= 60 && percentage <= 69)
 	{
-		cout << "A " << percentage << " is a D" << "." << endl;
+		cout << "A " << percentage << " is a " << d << "." << endl;
 	}
 	if (percentage <= 59)
 	{
-		cout << "A " << percentage << " is a F" << "." << endl;
+		cout << "A " << percentage << " is a " << f << "." << endl;
 	}
 	
 
