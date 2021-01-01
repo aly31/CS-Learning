@@ -41,7 +41,7 @@ bool isLeapYear(int year)
 	{
 		leapYear = false;
 	}
-	if (year % 4 != 0  && year % 400 != 0)
+	if (leapYear == false)
 	{
 		cout << year << " isn't a leap year." << endl;
 	}
@@ -82,7 +82,35 @@ double incomeTaxCalculator(double annualIncome)
 	// You are given a income already. The variable annualIncome is declared on line 34
 
 	// Print out the amount the person owes in taxes
-
+	if (annualIncome >= 0 && annualIncome <= 0)
+	{
+		taxOwed = 0.10 * annualIncome;
+	}
+	if (annualIncome >= 9876 && annualIncome <= 40125)
+	{
+		taxOwed = 987 + (0.12 * (annualIncome - 9875));
+	}
+	if (annualIncome >= 40126 && annualIncome <= 85825)
+	{
+		taxOwed = 4617.50 + (0.22 * (annualIncome - 40125));
+	}
+	if (annualIncome >= 85526 && annualIncome <= 163300)
+	{
+		taxOwed = 14605.50 + (0.24 * (annualIncome - 85525));
+	}
+	if (annualIncome >= 163301 && annualIncome <= 207350)
+	{
+		taxOwed = 33271.50 + (0.32 * (annualIncome - 163000));
+	}
+	if (annualIncome >= 207351 && annualIncome <= 518400)
+	{
+		taxOwed = 47367.50 + (0.35 * (annualIncome - 207350));
+	}
+	if (annualIncome >=518401)
+	{
+		taxOwed = 156235 + (0.37 * (annualIncome - 518400));
+	}
+	cout << " You owe " << taxOwed << "." << endl;
 
 
 
