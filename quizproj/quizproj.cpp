@@ -137,32 +137,31 @@ int main()
 	double percentage;
 	percentage = (total / questions ) * 100;	
 
-	char A;
-	string letter; 
+	char grade; 
 
 	cout << "You got " << total << " out of " << questions << " questions correct" << "." << "That's a " << percentage << "%!" <<endl;
 	
 	if (percentage >= 90 && percentage <= 100)	
 	{
-		letter = A; 
+		grade = 'A';
 	}
 	if (percentage >= 80 && percentage <= 89)
 	{
-		
+		grade = 'B';
 	}
 	if (percentage >= 70 && percentage <= 79)
 	{
-		
+		grade = 'C';
 	}	
 	if (percentage >= 60 && percentage <= 69)
 	{
-		
+		grade = 'D';
 	}
 	if (percentage <= 59)
 	{
-		
+		grade = 'F';
 	}	
 
-	
+	cout << "Your grade, " << percentage << " is " << grade << "!" << endl;
 }	
 
