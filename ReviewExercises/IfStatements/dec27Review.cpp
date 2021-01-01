@@ -3,8 +3,9 @@
 #include <iostream>
 #include <assert.h>
 
-using namespace std;
 
+using namespace std;
+void testIsLeapYear();
 bool isLeapYear(int year)
 {
 	
@@ -18,6 +19,45 @@ bool isLeapYear(int year)
 	// Years should only start from 0. 0 is a valid year and is a leap year.
 	// If an invalid year is given (negative year), we will assign the variable leapYear to false
 	// We also should print out an error message for invalid years
+	if (year % 4 == 0)
+	{
+		if (year % 100 == 0)
+		{
+			if (year % 400 == 0)
+			{
+				leapYear = true;
+			}
+			else
+			{
+				leapYear = false;
+			}
+		}
+		else
+		{
+			leapYear = true;
+		}
+	}
+	else
+	{
+		leapYear = false;
+	}
+	if (year % 4 != 0  && year % 400 != 0)
+	{
+		cout << year << " isn't a leap year." << endl;
+	}
+	else
+	{
+		cout << year << " is a leap year." << endl;
+	}
+	if (year < 0)
+	{
+		leapYear = false; 
+		cout << "That's an invalid input!" << endl;
+	}
+
+	
+	
+
 
 
 
