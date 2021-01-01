@@ -106,7 +106,7 @@ double incomeTaxCalculator(double annualIncome)
 	{
 		taxOwed = 47367.50 + (0.35 * (annualIncome - 207350));
 	}
-	if (annualIncome >=518401)
+	if (annualIncome >= 518401)
 	{
 		taxOwed = 156235 + (0.37 * (annualIncome - 518400));
 	}
