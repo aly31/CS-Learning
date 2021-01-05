@@ -24,6 +24,34 @@ int main()
 
 	// GOOD LUCK!
 
+// rand () % 100;
+cout << "This is a guessing game. Please guess a number" << "." << endl;
+int x;
+cin >> x;
+int random = (rand () % (101 -1)) + 1;
+int tries = 0;
+
+bool isCorrect;
+while (x != random)
+{
+	tries = tries + 1;
+	isCorrect = false;
+	if (x > random)
+	{
+		cout << "Your guess is too big!" << endl;
+	}
+	else
+	{
+		cout << "Your guess is too small!" << endl;
+	}
+	cout << "Guess again!" << endl; 
+}
+if (x == random)
+{
+	isCorrect = true; 
+	cout << "It only took you" << tries << "tries!" << endl;
+}
+
 
 
 
