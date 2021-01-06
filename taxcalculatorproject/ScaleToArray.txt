@@ -1,0 +1,15 @@
+Requirements:
+
+Expand the tax calculator to get a bill for 3 items
+
+Method 1 (no itemized tax/tip):
+    - Get the price of each item
+    - Sum these prices together
+    - Calculate tax and tip
+    - Print total
+
+Method 2 (itemized tax/tip):
+    - Get the price of each item
+    - Calculate tax and tip for each item
+    - Sum the total of each price (with tax/tip)
+    - Print total
