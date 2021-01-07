@@ -358,3 +358,10 @@ FodyWeavers.xsd
 
 # MACOS X files
 .DS_STORE
+AshwinsFolder/Demos/dec
+GuessingGameProj/gg
+LessonExercises/Loops/NestedLoops/sc
+LessonExercises/Loops/d2b
+LessonExercises/Scope/scope
+LessonExercises/StringManipulation/encryptor
+LessonExercises/StringManipulation/printAsciiCode
